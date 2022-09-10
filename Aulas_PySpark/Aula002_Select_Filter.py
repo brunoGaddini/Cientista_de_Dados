@@ -73,7 +73,7 @@ spark.sql('''
         ''').show(5)
 """
 
-df.printSchema()
+#df.printSchema()
 
 # Utilizando dois filtros
 # 1ª forma
@@ -89,3 +89,16 @@ df.printSchema()
 #df.filter((F.col("regiao") == 'Norte') | (F.col("estado") == 'AM')).show(10)
 
 # Utilizando where
+#df.where((F.col("regiao") == 'Norte') | (F.col("estado") == 'AM')).show(10)
+
+# Utilizando like - ex: buscando estado iniciando com a letra A na regiao norte
+#df.filter((F.col("regiao") == 'Norte')).filter("estado like 'A%'").show(10)
+
+#df.filter("regiao in ('Norte','Sul')").show(1000)
+
+# Utilando lista
+#lista_regiao = ["Norte","Sul"]
+#df.filter(F.col("regiao").isin(lista_regiao)).show(1000)
+
+# Utilizando o startwith
+df.filter(F.col("regiao").startswith("C")).show(1000)
