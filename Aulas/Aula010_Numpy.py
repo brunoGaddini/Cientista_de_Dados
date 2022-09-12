@@ -16,5 +16,11 @@ Criando uma array de tipo específico
 Criando uma array como float de 64bits
 """
 
+print()
+matriz_float = np.array([1.4, 3.6, -5.1, 9.42, 4.999])
+print(matriz_float)
 
+print()
+matriz_int_64 = matriz_float.astype(np.int32)
+print(matriz_int_64)
 
