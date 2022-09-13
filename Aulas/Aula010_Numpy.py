@@ -24,3 +24,5 @@ print()
 matriz_int_64 = matriz_float.astype(np.int32)
 print(matriz_int_64)
 
+
+
