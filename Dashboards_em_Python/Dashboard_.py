@@ -6,13 +6,12 @@ app = Dash(__name__)
 
 # O primeiro passo é construir o layout
 
-# Dataframe como Base de dados
-df = pd.DataFrame({
-    "Fruit": ["Apples", "Oranges", "Bananas", "Apples", "Oranges", "Bananas"],
-    "Amount": [4, 1, 2, 2, 4, 5],
-    "City": ["SF", "SF", "SF", "Montreal", "Montreal", "Montreal"]
-})
+# Dataframe como Base de dados. Lendo a base omo arquivo excel.
+df = pd.read_excel("Vendas.xlsx")
+
+
 # Posso construir o layout com html ou itens dcc(itens de dashoboards)
+# Criando o gráfico com base no arquivo excel importado.
 fig = px.bar(df, x="Fruit", y="Amount", color="City", barmode="group")
 
 # Construindo uma lista de itens
