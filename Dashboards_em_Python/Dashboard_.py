@@ -24,12 +24,13 @@ app.layout = html.Div(children=[
     html.Div(children='''
         Gráfico com a quantidade de produtos vendidos.
     '''),
-
+# Criando o gráfico conforme a variável fig criada anteriormente
     dcc.Graph(
         id='example-graph',
         figure=fig
     )
 ])
 
+# Cod. Para rodar o server
 if __name__ == '__main__':
     app.run_server(debug=True)
