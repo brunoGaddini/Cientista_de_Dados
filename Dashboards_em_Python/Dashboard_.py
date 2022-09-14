@@ -12,7 +12,9 @@ df = pd.read_excel("Vendas.xlsx")
 
 # Posso construir o layout com html ou itens dcc(itens de dashoboards)
 # Criando o gráfico com base no arquivo excel importado.
-fig = px.bar(df, x="Fruit", y="Amount", color="City", barmode="group")
+# O alias px do plotly + o .bar, segnifica gráfico de barra
+# Para criar outro gráfico basta criar outra fig. E outro dcc.Graph com outro id
+fig = px.bar(df, x="Produto", y="Quantidade", color="ID Loja", barmode="group")
 
 # Construindo uma lista de itens
 # Parâmetro children para construção de textos em dash html
