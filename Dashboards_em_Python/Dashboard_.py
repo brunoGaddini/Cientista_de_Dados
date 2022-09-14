@@ -57,7 +57,7 @@ app.layout = html.Div(children=[
     Input('lista_lojas', 'value')
 )
 def update_output(value):
-# Cirando a condição para exibir o gráfico com os valores de todas as lojas
+# Criando a condição para exibir o gráfico com os valores de todas as lojas
 # Else para exibição dos valores de lojas únicas
 # .loc realiza o filtro [linhas, colunas] se eu quiser todas as colunas só apresentar conforme o laço abaixo
 # Quero filtrar as linhas cujo valor corresponde. Ou seja, quero pegar as linhas onde a coluna ID Loja é igual a loja que estou selecionando no botão
