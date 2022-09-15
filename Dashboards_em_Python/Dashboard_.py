@@ -12,7 +12,7 @@ df = pd.read_excel("Vendas.xlsx")
 
 # Posso construir o layout com html ou itens dcc(itens de dashoboards)
 # Criando o gráfico com base no arquivo excel importado.
-# O alias px do plotly + o .bar, segnifica gráfico de barra
+# O alias px do plotly + o .bar, significa gráfico de barra
 # Para criar outro gráfico basta criar outra fig. E outro dcc.Graph com outro id
 fig = px.bar(df, x="Produto", y="Quantidade", color="ID Loja", barmode="group")
 # Pegando todas as opções lojas do ID Loja para uma lista python

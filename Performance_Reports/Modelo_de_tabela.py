@@ -31,7 +31,7 @@ fig.add_trace(
         x=df["Date"],
         y=df["Mining-revenue-USD"],
         mode="lines",
-        name="mining revenue"
+        name="teste teste"
     ),
     row=3, col=1
 )
@@ -49,9 +49,9 @@ fig.add_trace(
 fig.add_trace(
     go.Table(
         header=dict(
-            values=["Date", "Number<br>Transactions", "Output<br>Volume (BTC)",
+            values=["Aoooooo", "Number<br>Transactions", "Output<br>Volume (BTC)",
                     "Market<br>Price", "Hash<br>Rate", "Cost per<br>trans-USD",
-                    "Mining<br>Revenue-USD", "Trasaction<br>fees-BTC"],
+                    "teste<br>teste", "Trasaction<br>fees-BTC"],
             font=dict(size=10),
             align="left"
         ),
