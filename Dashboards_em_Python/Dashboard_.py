@@ -39,7 +39,7 @@ app.layout = html.Div(children=[
 # Value mostra o valor inicial do botão
     dcc.Dropdown(opcoes, value='Todas as Lojas', id='lista_lojas'),
 # Criando o gráfico conforme a variável fig criada anteriormente
-    dcc.Graph(
+    dcc.Tabs(
         id='grafico_qtde_vendas',
         figure=fig
     )

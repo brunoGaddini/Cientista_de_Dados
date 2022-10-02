@@ -24,7 +24,7 @@ df = (spark
 # Uma forma de nomear as colunas no início é com a criação de um schema, conforme Aula005
 # Outra forma de se inserir os nomes das colunas é com o .toDF
 
-# Outra forma de se criar um df com lista. Esta forma no .toDF é crinado uma lista
+# Outra forma de se criar um df com lista. Esta forma no .toDF é criando uma lista
 
 """
 lista = ["um", "dois", "três", "quatro", "cinco", "seis", "sete"]
